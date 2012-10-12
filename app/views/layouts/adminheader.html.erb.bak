@@ -1,0 +1,17 @@
+<h1 align='center'> School management system</h1>
+
+ 
+ <% if user_signed_in? %>
+     <p class="menu">
+     <%= link_to "Student Detail |", students_path %> 
+     <%= link_to "Class Detail |", class_mstrs_path %> 
+     <%= link_to "Staff Detail |", staffs_path %>
+     <%= link_to 'New Student |', new_student_path %>
+     <%= link_to 'New Staff |', new_staff_path %>
+     <%= link_to 'New Class', new_class_mstr_path %>
+     <%= link_to 'About Us', aboutus_path %>
+     
+     <%= link_to "Sign out", destroy_user_session_path, :class => "sign_out", :method => :delete %>
+     </p>
+ 
+  <% end %> 

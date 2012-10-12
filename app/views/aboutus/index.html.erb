@@ -1,0 +1,26 @@
+<h1>Listing aboutus</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @aboutus.each do |aboutu| %>
+  <tr>
+    <td><%= aboutu.title %></td>
+    <td><%= aboutu.content %></td>
+    <td><%= link_to 'Show', aboutu %></td>
+    <td><%= link_to 'Edit', edit_aboutu_path(aboutu) %></td>
+    <td><%= link_to 'Destroy', aboutu, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<% if @aboutus.count < 1 %> 
+<%= link_to 'New Aboutu', new_aboutu_path %>
+<% end %>

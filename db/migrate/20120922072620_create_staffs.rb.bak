@@ -1,0 +1,13 @@
+class CreateStaffs < ActiveRecord::Migration
+  def change
+    create_table :staffs do |t|
+      t.string :fname
+      t.string :lname
+      t.string :address
+      t.number :phone
+      t.date :dob
+
+      t.timestamps
+    end
+  end
+end

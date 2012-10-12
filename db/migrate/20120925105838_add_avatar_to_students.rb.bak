@@ -1,0 +1,4 @@
+class AddAvatarToStudents < ActiveRecord::Migration
+  def change
+  end
+end

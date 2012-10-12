@@ -1,0 +1,40 @@
+<h1 align='center'>Class Detail</h1>
+<div align=left>
+  <%= form_tag class_mstrs_path, method: :get do %>
+  <%= text_field_tag :search, params[:search] %>
+  <%= submit_tag "Search by name", fname: nil %>
+  <% end %>
+</div>
+
+<table id='tab' border='1' cellpadding='5' align=center>
+  <tr>
+    <th>Class Code</th>
+    <th>Class name</th>
+    <th>Teacher name</th>
+    <th>No of student</th>
+    <th colspan='3'>Action</th>
+    
+  </tr>
+
+<% @class_mstrs.each do |class_mstr| %>
+  <tr>
+     <td><%= class_mstr.id %></td>
+    <td><%= class_mstr.class_name %></td>
+    <td><%= class_mstr.teacher_name %></td>
+    <td><%= class_mstr.no_of_student %></td>
+    <td><%= link_to image_tag("icon-view.png", :border => 0), class_mstr %></td>
+    <td><%= link_to image_tag("pencil.png", :border => 0), edit_class_mstr_path(class_mstr) %></td>
+    <td><%= link_to image_tag("icon_missing.png", :border => 0), class_mstr, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+
+<br/>
+<%= will_paginate @posts %> <br />
+
+<div align='center'>
+
+<%= link_to 'New Class', new_class_mstr_path %> |
+<%= link_to 'Back', :controller => 'admin', :class => "back_btn", :action => "index" %>
+</div>

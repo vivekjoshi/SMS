@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+<h1 align='center'><%= @class_mstr.teacher_name %>'s detail</h1>
+<table id='tab1' cellpadding='5' align=center>
+<td>Class Code:</td>
+ <td> <%= @class_mstr.id %></td></tr>
+<tr>
+<td>Class name:</td>
+ <td> <%= @class_mstr.class_name %></td></tr>
+ <tr>
+
+<tr>
+<td>
+  Teacher name:</td>
+  <td><%= @class_mstr.teacher_name %></tr></td>
+
+
+<tr>
+<td>
+  No of student:</td>
+ <td> <%= @class_mstr.no_of_student %></td></tr>
+<tr>
+<td align='center' colspan='2'>
+<%= link_to 'Edit', edit_class_mstr_path(@class_mstr) %> |
+<%= link_to 'Back', class_mstrs_path %>
+</td>
+</tr>
+</table>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SchoolMgmt</title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%=stylesheet_link_tag "css"%>
+
+  <%= csrf_meta_tags %>
+ <div id="header">
+ 
+ 
+ 
+
+
+ </div>
+</head>
+<body>
+
+<div align='center' class="container">
+<% flash.each do |name, msg| %>
+<%= content_tag :div, msg, :id => "flash_#{name}" %>
+</div>
+<% end %> 
+
+<%= yield %>
+
+</body>
+</html>

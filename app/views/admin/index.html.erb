@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SchoolMgmt</title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%=stylesheet_link_tag "css"%>
+
+  <%= csrf_meta_tags %>
+ 
+ <div style="height:150px;background:#D0E3FD;width:830px;margin-left:auto;margin-right:auto;text-align:center;padding-top:50px;margin-top:100px;">
+ <h1 align='center'> Welcome To Admin Panel </h1>
+ </div>
+ <br/>
+
+</head>
+<body>
+
+
+<% flash.each do |name, msg| %>
+<%= content_tag :div, msg, :id => "flash_#{name}" %>
+<% end %> 
+
+<%= yield %>
+
+</body>
+</html>
