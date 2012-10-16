@@ -1,6 +1,6 @@
-<p id="notice"><%= notice %></p>
+<% @staff.each do |aboutu| %>
 
- <table id='tab' cellpadding='5' align=center>
+ <table id='tab1' cellpadding='5' align=center>
  <tr><td>First Name:</td>
 <td>  <%= @staff.fname %></td>
 <tr>

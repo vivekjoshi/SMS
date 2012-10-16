@@ -1,0 +1,7 @@
+<h1>Imggallery#index</h1>
+<p>Find me in app/views/imggallery/index.html.erb</p>
+<% @student.each do |student| %>
+<div>
+ <%= image_tag student.avatar.url(:medium)  %>
+</div>
+<% end %>
