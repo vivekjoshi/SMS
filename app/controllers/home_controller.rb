@@ -1,7 +1,5 @@
 class HomeController < ApplicationController
-def index
-     
-end
+ 
 
   def about_us
    @aboutus = Aboutu.find(:all)
@@ -11,7 +9,12 @@ end
    end
   end 
 
-    
+   def index
+    @staff = Staff.find(:all)
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @staff }
+    end
+  end
 
- 
 end

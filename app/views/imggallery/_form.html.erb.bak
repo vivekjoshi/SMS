@@ -1,0 +1,30 @@
+<%= form_for( @imggallery, :html => { :multipart => true}) do |f| %>
+  <% if @imggallery.errors.any? %>
+  <div  align='center'>
+    <div id="error_explanation" >
+      <h2><%= pluralize(@imggallery.errors.count, "error") %> prohibited this student from being saved:</h2>
+      <ul>
+      <% @imggallery.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <table id='tab2' cellpadding='5' align=center>
+     
+ 
+ 
+ <tr><td>
+    <%= f.label :picture %></td>
+   <td> <%= f.file_field :avatar %></td><tr>
+ <tr>
+ 
+ <tr><td colspan='2' align='center'>
+  <div class="actions">
+    <%= f.submit %>
+	</div>
+ </td>
+ </tr>
+ </table>
+<% end %>

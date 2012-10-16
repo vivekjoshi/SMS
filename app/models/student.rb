@@ -6,7 +6,7 @@ class Student < ActiveRecord::Base
   validates_presence_of :phone
   validates_presence_of :dob
   
- 
+  
   has_attached_file :avatar, :styles => { :medium => "100x100>", :thumb => "100x100>" }
 
  def self.search(search)

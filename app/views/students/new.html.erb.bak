@@ -1,7 +1,7 @@
 
 
 
-<h1 align='center'>New student</h1>
+<h1 align='center'>New Student Registration</h1>
 
 <%= render 'form' %>
 <div align='center'>
