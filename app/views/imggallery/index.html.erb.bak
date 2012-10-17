@@ -5,3 +5,7 @@
  <%= image_tag student.avatar.url(:medium)  %>
 </div>
 <% end %>
+
+
+
+
