@@ -1,6 +1,6 @@
 body {
   background-color: silver;
-   background: url("school1.png")no-repeat;
+  background: url("school.png")no-repeat;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -8,8 +8,8 @@ body {
 }
 image
 {
- background: url("school.png") no-repeat ;
-}
+ background: url("school.png") no-repeat;
+ }
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -40,10 +40,9 @@ div {
   }
 }
 
-#notice
-   {
+#notice {
   color: green;
-   }
+}
 
 .field_with_errors {
   padding: 2px;
