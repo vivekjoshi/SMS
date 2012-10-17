@@ -1,13 +1,14 @@
-<h1> HELLO </h1>
+<h1>  </h1>
 
 
 <% @aboutus.each do |aboutu| %>
 <p>
-  <b>Title:</b>
-  <%= aboutu.title %>
+  
+  <b><%= aboutu.title %></b>
 </p>
 
 <p>
-  <b>Content:</b>
+  <b></b>
   <%= aboutu.content %>
 </p>
+<% end %>
