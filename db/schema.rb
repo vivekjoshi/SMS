@@ -56,7 +56,7 @@ ActiveRecord::Schema.define(:version => 20121017071312) do
   create_table "class_mstrs", :force => true do |t|
     t.string   "class_name"
     t.string   "teacher_name"
-    t.integer  "no_of_student"
+    t.string   "no_of_student"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
@@ -95,7 +95,7 @@ ActiveRecord::Schema.define(:version => 20121017071312) do
     t.string   "lname"
     t.string   "address"
     t.string   "phone"
-    t.date     "dob"
+    t.string   "dob"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -114,12 +114,6 @@ ActiveRecord::Schema.define(:version => 20121017071312) do
     t.datetime "avatar_updated_at"
   end
 
-  create_table "user_roles", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
     t.string   "encrypted_password",     :default => "", :null => false
@@ -133,7 +127,6 @@ ActiveRecord::Schema.define(:version => 20121017071312) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
-    t.string   "user_role"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
