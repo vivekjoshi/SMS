@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 <div align="justify" style="background-color:yellow">DPS Indore - An Epitome of Quality Education<br><br>
+=======
+<<<<<<< HEAD
+=======
+<div id='box',align="justify">DPS Indore - An Epitome of Quality Education<br><br>
+>>>>>>> bf53173435c9c50902f9d0f7382551a50ed5e682
 
+>>>>>>> 7c6bc648c9ef633383a2ba08427538770d7851db
 
 In today's world fraught with competition and challenges, there is nothing more important than a 'good' school background for the young citizens. It is ultimately the quality of education the child receives that will propel her/him to a successful career and a significant place in society - as well as inculcate the moral, cultural and spiritual values so vital to a child's all round development.<br>
       <br>
@@ -33,12 +40,12 @@ The Delhi Public School Society of New Delhi is recognized throughout  the acade
 
 <% @aboutus.each do |aboutu| %>
 <p>
-  <b>Title:</b>
-  <%= aboutu.title %>
+  
+  <b><%= aboutu.title %></b>
 </p>
 
 <p>
-  <b>Content:</b>
+  <b></b>
   <%= aboutu.content %>
 </p>
 <% end %>
