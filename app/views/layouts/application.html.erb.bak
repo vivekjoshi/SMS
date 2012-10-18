@@ -2,7 +2,7 @@
 <html>
 <head>
 <div style="height:100px;background:#D0E3FD;width:830px;margin-left:auto;margin-right:auto;text-align:center;opacity:0.7;padding-top:30px;">
-<h1>Welcome To School Management System ....poonam  </h1>
+<h1>Welcome To School Management System  </h1>
 
 <%= link_to 'Home', :controller => "home", :action => "index"  %>
 <%= link_to 'About Us', :controller => "home", :action => "about_us"  %>

@@ -1,43 +1,4 @@
-<<<<<<< HEAD
-<div align="justify" style="background-color:yellow">DPS Indore - An Epitome of Quality Education<br><br>
-=======
-<<<<<<< HEAD
-=======
-<div id='box',align="justify">DPS Indore - An Epitome of Quality Education<br><br>
->>>>>>> bf53173435c9c50902f9d0f7382551a50ed5e682
-
->>>>>>> 7c6bc648c9ef633383a2ba08427538770d7851db
-
-In today's world fraught with competition and challenges, there is nothing more important than a 'good' school background for the young citizens. It is ultimately the quality of education the child receives that will propel her/him to a successful career and a significant place in society - as well as inculcate the moral, cultural and spiritual values so vital to a child's all round development.<br>
-      <br>
-Education is more than mere literacy. It is in fact a soul searching exercise, committed towards excellence. <br>
-<br>
-The Delhi Public School Society of New Delhi is recognized throughout  the academic world for its progressive approach and commitment to excellence.  Distinction and diversity are the twin hallmarks of its philosophy,  "Educational Leadership and Scholarly Achievement" is its mission.<br>
-
-      <br>
-      The school aims to develop the ability in the student to enable him to  make the best use of his personality, surroundings and circumstances in order  to accomplish the maximum in life for himself and for others. Broadly speaking,  the School with its experienced and highly qualified faculty has two goals  which are mutually <br>
-      dependent : cultivation and development of the individual and  the improvement of society.&nbsp;<br>
-      <br>
-      The School Campus is spread over 21 acres of land with an attractive,  uniquely designed building incorporating all modern facilities &amp; amenities.  The campus has natural, lush green surroundings with landscaped beautiful  gardens and water bodies, to provide a conducive environment for the healthy  growth of its students.<br>
-<br>
-<p>The mission of the  School is to foster in each pupil</p>
-<ul>
-<li>the individual's inner freedom and development towards self-initiated  action</li>
-<li>acceptance of responsibility for one's own actions</li>
-<li>Self-direction and intelligent decision making</li>
-<li>critical learning and evaluation</li>
-<li>acquisition of knowledge for resolution of problems</li>
-<li>intelligent and flexible adaptation to new situations</li>
-<li>creative utilization of experiential learning in adaptation to new  situations</li>
-<li>effective cooperation with others</li>
-<li>self-motivation and a desire to work for one's own purposes</li>
-<li>belief that in solving the society's problems lies his own priority</li>
-</ul>
-"Change does not necessarily assure progress, but progress  implacably requires change. Education is essential to change, for education  creates both new wants and the ability to satisfy them."&nbsp;<br>
-<br>
-      </div>
-      </div>
-
+ 
 <% @aboutus.each do |aboutu| %>
 <p>
   
