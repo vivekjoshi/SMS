@@ -1,9 +1,5 @@
 SchoolMgmt::Application.routes.draw do
 
-  
-
-  resources :characters
-
   resources :contacts
 
   get "imggallery/index"
