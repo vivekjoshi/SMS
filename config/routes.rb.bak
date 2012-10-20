@@ -12,6 +12,8 @@ SchoolMgmt::Application.routes.draw do
   resources :imggallery
 
   resources :staffs
+
+   resources :devise
   
   match 'home/about_us' => 'home#about_us'
 

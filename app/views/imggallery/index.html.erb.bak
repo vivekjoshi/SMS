@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<h1>Imggallery#index</h1>
+<p>Find me in app/views/imggallery/index.html.erb</p>
+<% @student.each do |student| %>
+<div>
+ <%= image_tag student.avatar.url(:medium)  %>
+</div>
+<% end %>
+
+
+
+
+=======
+>>>>>>> 7c6bc648c9ef633383a2ba08427538770d7851db
 <h1>Imggallery index</h1>
 
 <% @student.each do |student| %>
@@ -5,3 +21,4 @@
  <%= image_tag student.avatar.url(:medium)  %>
 </div>
 <% end %>
+>>>>>>> ea92a8f2f6a5227722b3da8551e020b74bcb4092

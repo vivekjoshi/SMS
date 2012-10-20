@@ -14,6 +14,8 @@ gem 'meta_search', '>= 1.1.0.pre'
 
 gem 'gmaps4rails'
 
+gem 'rambling-slider-rails'
+
 
 # Gems used only for assets and not required
 # in production environments by default.

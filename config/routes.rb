@@ -1,5 +1,7 @@
 SchoolMgmt::Application.routes.draw do
 
+  resources :photos
+
   resources :contacts
 
   get "imggallery/index"
@@ -12,6 +14,8 @@ SchoolMgmt::Application.routes.draw do
   resources :imggallery
 
   resources :staffs
+
+  
   
   match 'home/about_us' => 'home#about_us'
 
