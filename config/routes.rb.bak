@@ -1,5 +1,7 @@
 SchoolMgmt::Application.routes.draw do
 
+  resources :photos
+
   resources :contacts
 
   get "imggallery/index"
@@ -13,8 +15,8 @@ SchoolMgmt::Application.routes.draw do
 
   resources :staffs
 
-   resources :devise
   
+
   match 'home/about_us' => 'home#about_us'
 
  devise_for :users

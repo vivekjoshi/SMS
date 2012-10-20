@@ -16,7 +16,7 @@ SchoolMgmt::Application.routes.draw do
   resources :staffs
 
   
-  
+
   match 'home/about_us' => 'home#about_us'
 
  devise_for :users
