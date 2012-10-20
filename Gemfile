@@ -8,13 +8,22 @@ gem 'rails', '3.2.3'
 gem 'mysql2'
 
 gem 'devise'
+ 
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'oauth2'
 
 gem 'activeadmin'
 gem 'meta_search', '>= 1.1.0.pre'
 
 gem 'gmaps4rails'
 
+<<<<<<< HEAD
 gem 'rambling-slider-rails'
+=======
+ 
+>>>>>>> 9ef2c6de1f51b7ae9f5d2d7a0916045ea9787a66
 
 
 # Gems used only for assets and not required
@@ -32,6 +41,8 @@ end
 gem 'jquery-rails'
 
 gem 'paperclip'
+
+ 
 
 gem 'will_paginate', '>= 3.0.pre4'
 

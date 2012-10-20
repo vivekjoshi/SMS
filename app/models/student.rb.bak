@@ -9,6 +9,7 @@ class Student < ActiveRecord::Base
   
   has_attached_file :avatar, :styles => { :medium => "100x100>", :thumb => "100x100>" }
 
+
  def self.search(search)
   if search
     where('fname LIKE ?', "%#{search}%")
