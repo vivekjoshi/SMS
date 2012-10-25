@@ -1,37 +1,15 @@
-<<<<<<< HEAD
-<h1>Listing photos</h1>
-<%= stylesheet_link_tag 'jquery.rambling.slider' %>
-<%= javascript_include_tag 'jquery.rambling.slider' %>
-<%= stylesheet_link_tag "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-<script type="text/javascript" src="http://gettopup.com/releases/latest/top_up-min.js"></script>
 
 
 
- 
 
- 
-<% @photo.each do |photo| %>
-<div  align="center" style="float:left; margin-left:7px">
-
-<%= image_tag photo.avatar.url(:thumb)  %>
-</div>
-=======
- 
-
-<script src="js/jquery-1.7.2.min.js"></script>
+ <script src="js/jquery-1.7.2.min.js"></script>
 <script src="js/lightbox.js"></script>
 <link href="css/lightbox.css" rel="stylesheet" />
+
  
 <% @photo.each do |photo| %>
- 
-
-
-
-
 
 
 <%= link_to image_tag(photo.avatar.url(:thumb), :rel=> "lightbox", ), photo.avatar.url(:original), :rel => "lightbox[imagesetname]" %>
 
->>>>>>> 9ef2c6de1f51b7ae9f5d2d7a0916045ea9787a66
 <% end %>

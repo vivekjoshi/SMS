@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<div align="center" >
-<h1>Welcome To School Management System  </h1>
+<div align="center" class="header_menu">
+<%= image_tag("lg.jpeg", :class => "style_image")  %>
+<h1 style="width:800px;margin-left:45px;"> Welcome To School Management System  </h1>
+<div class="h_menu">
+<%= link_to 'Home', :controller => "home", :action => "index"  %> |
+<%= link_to 'About Us', :controller => "home", :action => "about_us"  %> |
 
-<%= link_to 'Home', :controller => "home", :action => "index"  %>
-<%= link_to 'About Us', :controller => "home", :action => "about_us"  %>
-
-<%= link_to 'Photos', :controller => "photos", :action => "index"  %>
+<%= link_to 'Photos', :controller => "photos", :action => "index"  %> |
 <%= link_to 'Contact Us', :controller => "contacts", :action => "index"  %>
+</div>
 </div>
   <title>SchoolMgmt</title>
 
@@ -17,7 +19,6 @@
   <%= stylesheet_link_tag "css"%>
 
   <%= csrf_meta_tags %>
->>>>>>> 9ef2c6de1f51b7ae9f5d2d7a0916045ea9787a66
   <%= yield :head %>  
  <div id="header">
  
@@ -37,7 +38,11 @@
  
 
 <%= yield %>
-<%= yield :scripts %>  
+<%= yield :scripts %> 
+
 
 </body>
+
+
 </html>
+
