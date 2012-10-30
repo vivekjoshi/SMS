@@ -14,8 +14,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'oauth2'
 
-
-
+gem 'easy_captcha'
 
 gem 'activeadmin'
 gem 'meta_search', '>= 1.1.0.pre'

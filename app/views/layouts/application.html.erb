@@ -1,48 +1,133 @@
-<!DOCTYPE html>
 <html>
 <head>
-<div align="center" class="header_menu">
-<%= image_tag("lg.jpeg", :class => "style_image")  %>
-<h1 style="width:800px;margin-left:45px;"> Welcome To School Management System  </h1>
-<div class="h_menu">
-<%= link_to 'Home', :controller => "home", :action => "index"  %> |
-<%= link_to 'About Us', :controller => "home", :action => "about_us"  %> |
 
-<%= link_to 'Photos', :controller => "photos", :action => "index"  %> |
-<%= link_to 'Contact Us', :controller => "contacts", :action => "index"  %>
-</div>
-</div>
-  <title>SchoolMgmt</title>
 
   <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= stylesheet_link_tag "css"%>
-
-  <%= csrf_meta_tags %>
-  <%= yield :head %>  
- <div id="header">
- 
- 
- 
-
-
- </div>
+ <link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="themes/1/js-image-slider.js" type="text/javascript"></script>
+    <link href="generic.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Abel|Satisfy' rel='stylesheet' type='text/css' />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
 </head>
 <body>
- 
- <div align='center' class="container">
+<div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header">
+			<div id="logo">
+				<h1>Ideal Convent School</h1>
+			
+			</div>
+			<div id="menu">
+				<ul>
+					
+					<li class="current_page_item"><%= link_to 'Home', :controller => "home", :action => "index"  %></li>
+					<li><%= link_to 'About Us', :controller => "home", :action => "about_us"  %></li>
+					<li><%= link_to 'Photos', :controller => "photos", :action => "index"  %></li>
+					<li><%= link_to 'Contact Us', :controller => "contacts", :action => "index"  %></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+   <div  id="container">
    <% flash.each do |name, msg| %>
    <%= content_tag :div, msg, :id => "flash_#{name}" %>
    </div>
    <% end %>  
- 
 
-<%= yield %>
+   <%= yield %>
 <%= yield :scripts %> 
-
-
+	
+	<div id="page-wrapper">
+		<div id="page">
+			<div id="wide-content">
+				
+			</div>
+		</div>
+	</div>
+	<div id="recent-news">
+		<h2>Recent News</h2>
+		<div id="rbox1">
+			<p class="date">October 28, 2012</p>
+			<p class="link"><a href="#">In posuere eleifend odio quisque semper augue mattis wisi maecenas ligula.</a></p>
+			<p> Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. Suspendisse dictum porta lectus. </p>
+			<p class="button-style1"><a href="#">Read More</a></p>
+		</div>
+		<div id="rbox2">
+			<p class="date">October 23, 2012</p>
+			<p><a href="#">Pellentesque viverra vulputate enim. Aliquam erat volutpat convallis dictum. </a></p>
+			<p>Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. Suspendisse dictum porta lectus. Donec placerat odio.</p>
+			<p class="button-style1"><a href="#">Read More</a></p>
+		</div>
+		<div id="rbox3">
+			<p class="date">October 20, 2012</p>
+			<p><a href="#">Suspendisse dictum porta lectus. Donec placerat odio vel elit. Nullam ante orci.</a></p>
+			<p>Pellentesque viverra vulputate enim. Aliquam erat volutpat. Pellentesque tristique ante ut risus. Quisque dictum. </p>
+			<p class="button-style1"><a href="#">Read More</a></p>
+		</div>
+		<div id="rbox4">
+			<p class="date">October 18, 2012</p>
+			<p><a href="#">Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis.</a></p>
+			<p>In posuere eleifend odio quisque semper augue mattis wisi maecenas ligula. Pellentesque viverra vulputate enim.</p>
+			<p class="button-style1"><a href="#">Read More</a></p>
+		</div>
+	</div>
+	<div id="footer-wrapper">
+		<div id="footer-content">
+			<div id="fbox1">
+				<h2>Aenean facilisis</h2>
+				<ul class="style2">
+					<li class="first"><a href="#">Maecenas luctus lectus at sapien</a></li>
+					<li><a href="#">Donec dictum metus in sapien</a></li>
+					<li><a href="#">Integer gravida nibh quis urna</a></li>
+					<li><a href="#">Etiam posuere augue sit amet nisl</a></li>
+					<li><a href="#">Mauris vulputate dolor sit amet nibh</a></li>
+					<li><a href="#">Praesent scelerisque scelerisque erat</a></li>
+				</ul>
+				<p class="button-style"><a href="#">More Details</a></p>
+			</div>
+			<div id="fbox2">
+				<h2>Fusce ultrices fringilla </h2>
+				<p>Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Aliquam erat volutpat. Vestibulum dui sem, pulvinar sed, imperdiet nec, iaculis nec, leo.</p>
+				<p><%= image_tag("img05.jpg", :alt => "activites") %></p>
+				
+				<p class="button-style"><a href="#">More Details</a></p>
+			</div>
+			<div id="fbox3">
+				<h2>Maecenas lectus</h2>
+				<ul class="style3">
+					<li class="first"><%= image_tag("img02.jpg", :alt => "activites") %>
+					
+						<p>Nullam non wisi a sem eleifend. Donec mattis libero eget urna. </p>
+						<p class="posted">October 28, 2002  |  (10 )  Comments</p>
+					</li>
+					<li>
+					<%= image_tag("img03.jpg", :alt => "activites") %>
+					
+						<p>Nullam non wisi a sem eleifend. Donec mattis libero eget urna. </p>
+						<p class="posted">October 21, 2002  |  (10 )  Comments</p>
+					</li>
+					<li>
+					<%= image_tag("img04.jpg", :alt => "activites") %>
+					
+						<p>Nullam non wisi a sem eleifend. Donec mattis libero eget urna. </p>
+						<p class="posted">October 19, 2002  |  (10 )  Comments</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<p>Copyright (c) 2012 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org">FCT</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.</p>
+</div>
 </body>
-
-
 </html>
+
 

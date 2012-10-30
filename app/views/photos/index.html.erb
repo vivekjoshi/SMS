@@ -6,10 +6,11 @@
 <script src="js/lightbox.js"></script>
 <link href="css/lightbox.css" rel="stylesheet" />
 
- 
+ <div id="banner">
 <% @photo.each do |photo| %>
 
 
 <%= link_to image_tag(photo.avatar.url(:thumb), :rel=> "lightbox", ), photo.avatar.url(:original), :rel => "lightbox[imagesetname]" %>
 
 <% end %>
+</div>

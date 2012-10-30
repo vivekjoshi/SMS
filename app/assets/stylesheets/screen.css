@@ -62,15 +62,14 @@ q:before, q:after, blockquote:before, blockquote:after {
 
 /* line 30, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
-  border:2px solid gray;
+  
   width:100px;
   height:100px;
 }
 
 a img:hover
 {
-  width:125px;
-  height:125px;
+ border:1px solid gray;
 }
 
 /* line 114, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */

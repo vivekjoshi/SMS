@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Demo 1 - Menucool Image Slider</title>
+  
     <link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
     <script src="themes/1/js-image-slider.js" type="text/javascript"></script>
     <link href="generic.css" rel="stylesheet" type="text/css" />
+    <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
     
-    <div id="sliderFrame">
+    <div id="banner">
+	   
+	       <div id="sliderFrame">
         <div id="ribbon"></div>
         <div id="slider">
            <%= image_tag("image-slider-10.gif", :alt => "activites") %>
@@ -25,6 +28,8 @@
              <%= link_to image_tag("student.png" ) %>
         </div>
     </div>
+
+	</div>
 
     
 </body>
