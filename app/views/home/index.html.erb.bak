@@ -5,7 +5,7 @@
     <link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
     <script src="themes/1/js-image-slider.js" type="text/javascript"></script>
     <link href="generic.css" rel="stylesheet" type="text/css" />
-    <link href="generic.css" rel="stylesheet" type="text/css" />
+    <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
     
@@ -25,7 +25,7 @@
              <%= link_to image_tag("admission.png" ) %>
              <%= link_to image_tag("exam.png" ) %>
              <%= link_to image_tag("timetable.png" ) %>
-             <%= link_to image_tag("student.png" ) %>
+             <%= link_to image_tag("student.png" ), :controller => "students", :action => "index" %>
         </div>
     </div>
 

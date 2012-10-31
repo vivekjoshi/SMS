@@ -20,7 +20,7 @@
 	<div id="header-wrapper">
 		<div id="header">
 			<div id="logo">
-				<h1>Ideal Convent School</h1>
+				<h1>Ideal Public School</h1>
 			
 			</div>
 			<div id="menu">
@@ -47,12 +47,7 @@
 	<div id="page-wrapper">
 		<div id="page">
 			<div id="wide-content">
-				<div>
-					<h2>Welcome to Ministerial!</h2>
-					<p>This is <strong>Ministerial </strong>, a free, fully standards-compliant CSS template designed by <a href="http://www.freecsstemplates.org">FCT</a> </p>
-					<p>Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor enim accumsan lacinia. Donec condimentum, urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget ante. Aliquam libero. Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Aliquam erat volutpat. Vestibulum dui sem, pulvinar sed, imperdiet nec, iaculis nec, leo. Fusce odio. Etiam arcu dui, faucibus eget, placerat vel, sodales eget, orci. Donec ornare neque ac sem. Mauris aliquet. </p>
-					<p class="button-style"><a href="#">More Details</a></p>
-				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -130,7 +125,7 @@
 	</div>
 </div>
 <div id="footer">
-	<p>Copyright (c) 2012 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org">FCT</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.</p>
+	<p>Copyright (c) 2012 idealtechnologys.com All rights reserved. Design by <a href="http://www.idealtechnologys.com"><u>idealtechnologys</u></a>. Photos by <a href="http://google.com/">google</a>.</p>
 </div>
 </body>
 </html>

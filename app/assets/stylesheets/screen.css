@@ -14,14 +14,13 @@ small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
+caption,article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
-  border: 0;
+  border: -1px;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -38,16 +37,35 @@ ol, ul {
 }
 
 /* line 24, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
+table.vivek {
   border-collapse: collapse;
   border-spacing: 0;
+  margin-top: 20px;
 }
+
+table.vivek th {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 20px;
+  background:#EBB462;
+  font-weight:bold;
+}
+
+.oddrowcolor{
+	background-color:#d4e3e5;
+}
+.evenrowcolor{
+	background-color:#c3dde0;
+}
+
 
 /* line 26, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
-  text-align: left;
+  text-align: center;
   font-weight: normal;
   vertical-align: middle;
+  width:115px;
+  height:20px;
 }
 
 /* line 28, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
@@ -61,11 +79,7 @@ q:before, q:after, blockquote:before, blockquote:after {
 }
 
 /* line 30, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  
-  width:100px;
-  height:100px;
-}
+
 
 a img:hover
 {
@@ -110,7 +124,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 36, ../sass/screen.sass */
 body, input, textarea {
-  color: white;
+  color: transparent;
   text-shadow: 0 -1px 0 black;
   font-size: 16px;
   line-height: 1.625em;
@@ -170,7 +184,7 @@ a {
 }
 /* line 125, ../sass/screen.sass */
 a:hover {
-  color: #FFFFFF;
+  color: #EBB462;
 }
 
 /* line 128, ../sass/screen.sass */

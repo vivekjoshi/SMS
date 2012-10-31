@@ -87,10 +87,11 @@ div {
 }
 
 #logo h1 {
-	padding: 50px 0px 0px 0px;
+	padding: 50px 0px -1px;
 	text-transform: lowercase;
 	letter-spacing: -2px;
 	font-size: 2.6em;
+	line-height: 40px;
 }
 
 #logo h1 a {
@@ -133,7 +134,7 @@ div {
 	font-family: 'Oswald', sans-serif;
 	font-size: 16px;
 	font-weight: 300;
-	color: #757575;
+	color: #ffffff;
 }
 
 #menu a:hover, #menu .current_page_item a {
@@ -144,19 +145,23 @@ div {
 	color: #36332E;
 }
 
+ 
 #banner {
 	overflow: hidden;
 	width: 1120px;
 	margin: 40px auto 0px auto;
+	height: 490px;
 }
 
 #banner p{
 	
 	color:#000;
+	font-style: italic;
 }
 
 #page-wrapper {
 	overflow: hidden;
+	height: 30px;
 }
 
 #page {
@@ -216,9 +221,9 @@ div {
 /* Footer */
 
 #footer {
-	height: 100px;
+	height: 15px;
 	margin: 0 auto;
-	padding: 50px 0px 15px 0px;
+	padding: 0px 0px 15px 0px;
 }
 
 #footer p {
@@ -244,6 +249,7 @@ div {
 	margin: 0px auto;
 	padding: 50px 40px;
 	color: #717171;
+	height: 510;
 }
 
 #footer-content a {

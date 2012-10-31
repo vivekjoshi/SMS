@@ -14,7 +14,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'oauth2'
 
-gem 'easy_captcha'
+
 
 
 gem 'activeadmin'

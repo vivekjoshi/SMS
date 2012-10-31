@@ -1,5 +1,5 @@
 
-
+<div align=center>
 <p id="notice"><%= notice %></p>
 
  <table id='tab1' cellpadding='5' align=center>

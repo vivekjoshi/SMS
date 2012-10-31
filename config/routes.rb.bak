@@ -1,5 +1,7 @@
 SchoolMgmt::Application.routes.draw do
 
+  devise_for :users 
+
   resources :photos
 
   resources :contacts
@@ -10,22 +12,27 @@ SchoolMgmt::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
+
+
   resources :aboutus
   resources :imggallery
 
   resources :staffs
 
   
-
+   
   match 'home/about_us' => 'home#about_us'
 
- devise_for :users
+
  resources :class_mstrs
  resources :students
  resources :admin
  resources :adminhome
  resources :users   
- root to: "home#index"
+
+ root :to => 'home#index'
+
+ match "/index" =>  'home#index'
 
 
 

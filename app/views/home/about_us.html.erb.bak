@@ -1,12 +1,14 @@
- 
+<div id="banner"> 
 <% @aboutus.each do |aboutu| %>
 <p align="center">
   
-  <b><%= aboutu.title %></b>
+<%= aboutu.title %>
 </p>
 
 <p>
-  <b></b>
+  
   <%= aboutu.content %>
 </p>
 <% end %>
+
+</div>

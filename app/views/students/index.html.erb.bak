@@ -1,19 +1,37 @@
+<script type="text/javascript">
+function altRows(id){
+	if(document.getElementsByTagName){  
+		
+		var table = document.getElementById(id);  
+		var rows = table.getElementsByTagName("tr"); 
+		 
+		for(i = 0; i < rows.length; i++){          
+			if(i % 2 == 0){
+				rows[i].className = "evenrowcolor";
+			}else{
+				rows[i].className = "oddrowcolor";
+			}      
+		}
+	}
+}
+
+window.onload=function(){
+	altRows('alternatecolor');
+}
+</script>
 
 
-<%= check_box_tag(:pet_dog) %>
-<%= label_tag(:pet_dog, "I own a dog") %>
-<%= check_box_tag(:pet_cat) %>
-<%= label_tag(:pet_cat, "I own a cat") %>
+
 
 <h1 align='center'>Students Records</h1>
-<div align=left>
+<div align=center>
   <%= form_tag students_path, method: :get do %>
   <%= text_field_tag :search, params[:search] %>
   <%= submit_tag "Search by name", fname: nil %>
   <% end %>
 </div>
-
-<table id='tab' border='1' cellpadding='5' align=center>
+<div align=center >
+<table class='vivek' id='alternatecolor' border='1' cellpadding='5'>
 
   <tr>
     <th>First Name</th>
@@ -32,18 +50,17 @@
     <td><%= student.address %></td>
     <td><%= student.phone %></td>
     <td><%= student.dob %></td>
-    <td><%= link_to image_tag("icon-view.png", :border => 0), student %></td>
-    <td><%= link_to image_tag("pencil.png", :border => 0), edit_student_path(student) %></td>
-    <td><%= link_to image_tag("icon_missing.png", :border => 0), student, confirm: 'Are you sure?', method: :delete %></td>
+    <td id='tabimg' ><%= link_to image_tag("icon-view.png", :border => 0), student %></td>
+    
   </tr>
   <% end %>
 </table>
-
+<%= will_paginate @posts %> <br />
+</div>
 <br />
 
- <%= will_paginate @posts %> <br />
+ 
 
-<div align='center'>
- <%= link_to 'New Student', new_student_path %> |
- <%= link_to 'Back', :controller => 'admin', :action => "index" %>
-</div> 
+ 
+
+ 

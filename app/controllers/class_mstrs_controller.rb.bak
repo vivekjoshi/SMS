@@ -1,5 +1,5 @@
 class ClassMstrsController < ApplicationController
-before_filter :authenticate_user!
+  # before_filter :authenticate_user!
   # GET /class_mstrs
   # GET /class_mstrs.json
   def index
